@@ -1,0 +1,17 @@
+* body {
+    background: gray;
+}
+header>h1 {
+    text-align: center;
+    background: white;
+}
+
+.main-container {
+    display: flexbox;
+}
+
+.form,.result {
+    background-color: red;
+    border: 1px solid;
+    width: 100%;
+}
