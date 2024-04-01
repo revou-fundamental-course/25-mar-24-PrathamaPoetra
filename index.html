@@ -8,15 +8,39 @@
 </head>
 <body>
     <header>
-        <h1>Caculator BMI - Pratama</h1>
+        <h1>Caculator BMI - Pratama Putra</h1>
     </header>
     <main>
         <div class="main-container">
-            <div class="Form">
+            <div class="container-item">
                 <h2>Form BMI</h2>
+                <p>Berat badan ideal adalah dibawah 75kg dengan tinggi 165cm. Jadi 
+                    porsi tubuh tersebut akan meningkatkan kesehatan tubuh
+                </p>
+                <section class="container-form">
+                    <div>
+                       <label for="">Jenis Kelamin</label><br>
+                       <span>
+                          <input type="radio" id="sex-male"><label for="sex-male">Pria</label>
+                          <input type="radio" id="sex-female"><label for="sex-female">Perempuan</label>
+                        </span>
+                    </div>
+                    <div>
+                       <label for="">Berat Badan</label><br>
+                       <input type="number">
+                    </div>
+                       <button type="button">Hitung BMI</button>
+                       <button type="button">Reset</button>
+                </section>
             </div>
-            <div class="Result">
+            <div class="container-item">
                 <h2>Result</h2>
+                <section class="container-result">
+                    <h4>Berat Badan Lebih</h4>
+                    <h1>0</h1>
+                    <h4>Anda Memiliki Berat Badan Berlebih</h4>
+                    <button type="button">Download Hasil BMI</button>
+                </section>
             </div>
         </div>
     </main>
