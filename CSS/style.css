@@ -42,6 +42,9 @@ header>h1 {
     padding: 10 px;
 }
 
+#contain-label {
+    font-weight: bold;
+}
 button {
     height: 32px;
     padding-right: 24px;
