@@ -3,46 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Caculator BM</title>
+    <title>Caculator BMI - Pratama Putra</title>
     <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
     <header>
-        <h1>Caculator BMI - Pratama Putra</h1>
+        <h1>Calculator BMI - Pratama Putra</h1>
     </header>
     <main>
         <div class="main-container">
             <div class="container-item">
                 <h2>Form BMI</h2>
-                <p>Berat badan ideal adalah dibawah 75kg dengan tinggi 165cm. Jadi 
-                    porsi tubuh tersebut akan meningkatkan kesehatan tubuh
+                <p>Berat Badan Ideal Adalah Dibawah 75kg Dengan Tinggi 165cm. Jadi 
+                    Porsi Tubuh Tersebut Akan Meningkatkan Kesehatan Tubuh
                 </p>
+
+                <!-- form display -->
                 <section class="container-form">
                     <div>
                        <label for="">Jenis Kelamin</label><br>
                        <span>
-                          <input type="radio" id="sex-male"><label for="sex-male">Pria</label>
-                          <input type="radio" id="sex-female"><label for="sex-female">Perempuan</label>
+                           <label for="sex-male">Pria</label>
+                          <input type="radio" name="sex" id="sex-male">
+                          <label for="sex-female">Perempuan</label>
+                          <input type="radio" name="sex" id="sex-female">
                         </span>
                     </div>
+                    <br>
                     <div>
                        <label for="">Berat Badan</label><br>
                        <input type="number">
+                       <br>
+                       <label for="">Umur</label><br>
+                       <input type="number">
+                       <br>
+                       <label for="">Tinggi Badan</label><br>
+                       <input type="number">
                     </div>
-                       <button type="button">Hitung BMI</button>
-                       <button type="button">Reset</button>
+                    <br>
+                       <button type="button" id="calculate-button">Hitung BMI</button>
+                       <button type="button" id="calculate-button">Reset</button>
                 </section>
             </div>
+            <!-- form display end -->
+
+            <!-- result display -->
             <div class="container-item">
                 <h2>Result</h2>
                 <section class="container-result">
                     <h4>Berat Badan Lebih</h4>
                     <h1>0</h1>
                     <h4>Anda Memiliki Berat Badan Berlebih</h4>
-                    <button type="button">Download Hasil BMI</button>
+                    <button type="button" id="calculate-button">Download Hasil BMI</button>
                 </section>
             </div>
         </div>
+        <!-- result display end -->
     </main>
     <footer></footer>
     <script src="JS/script.js"></script>

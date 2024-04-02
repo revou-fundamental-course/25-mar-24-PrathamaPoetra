@@ -10,6 +10,7 @@ header>h1 {
     display: flex;
 }
 
+/* display style */
 .container-item {
     border: 1px solid;
     width: 100%;
@@ -35,4 +36,20 @@ header>h1 {
 
 .cotainer-form>div {
     padding: 8px;
+}
+
+#input form {
+    padding: 10 px;
+}
+
+button {
+    height: 32px;
+    padding-right: 24px;
+    padding-left: 24px;
+}
+
+#calculate-button {
+    background-color: lightblue;
+    color: blue;
+    border: none;
 }
