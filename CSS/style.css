@@ -40,7 +40,7 @@ header>h1 {
      padding: 24px;
 }
 
-.input-data {
+#berat, #umur, #tinggi, #nama {
     height: 40px;
     width: 400px;
     background-color: lightgray;
@@ -54,16 +54,22 @@ header>h1 {
     padding: 8px;
 }
 
-#contain-label {
+.nama, .umur, .tinggi, .berat, #sex-label {
     font-weight: bold;
 }
+
+#nama, #umur, #tinggi, #berat {
+    padding-left: 10px;
+    font-size: 12pt;
+}
+
 button {
     height: 32px;
     padding-right: 24px;
     padding-left: 24px;
 }
 
-#calculate-button {
+#tombol-hitung, #tombol-reset {
     background-color: lightblue;
     color: blue;
     border: none;
@@ -75,7 +81,7 @@ button {
     -o-border-radius: 10px;
 }
 
-#calculate-button-r {
+#tombol-reset {
     background-color: orangered;
     color: white;
     border: none;

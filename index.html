@@ -14,36 +14,40 @@
         <div class="main-container">
             <div class="container-item">
                 <h2>Form BMI</h2>
-                <p>Berat Badan Ideal Adalah Dibawah 75kg Dengan Tinggi 165cm. Jadi 
-                    Porsi Tubuh Tersebut Akan Meningkatkan Kesehatan Tubuh. Ayo Cek Berat
-                    Badan Kamu !
+                <p>Pria: Berat badan ideal (kilogram) = [tinggi badan (sentimeter) - 100] - [(tinggi badan (sentimeter) - 100) x 10%]
+                </p>
+                <p>Wanita: Berat badan ideal (kilogram) = [tinggi badan (sentimeter) - 100] - [(tinggi badan (sentimeter) - 100) x 15%] 
                 </p>
 
                 <!-- form display -->
                 <section class="container-form">
                     <div>
-                       <label for="" id="contain-label">Jenis Kelamin</label><br>
+                       <label for="sex" id="sex-label">Jenis Kelamin</label><br>
                        <span>
                           <label for="sex-male">Pria</label>
-                          <input type="radio" name="sex" id="sex-male">
+                          <input type="radio" name="sex-male" id="sex-male">
                           <label for="sex-female">Perempuan</label>
-                          <input type="radio" name="sex" id="sex-female">
+                          <input type="radio" name="sex-female" id="sex-female">
                         </span>
                     </div>
                     <br>
                     <div>
-                       <label for="" id="contain-label">Berat Badan</label><br>
-                       <input type="number" class="input-data">
-                       <br>
-                       <label for="" id="contain-label">Umur</label><br>
-                       <input type="number" class="input-data">
-                       <br>
-                       <label for="" id="contain-label">Tinggi Badan</label><br>
-                       <input type="number" class="input-data">
+                       <label for="nama" class="nama">Nama Panjang</label><br>
+                       <input type="text" id="nama">
+                       <br><br>
+                        <label for="umur" class="umur">Umur</label><br>
+                       <input type="number" id="umur">
+                       <br><br>
+                       <label for="berat" class="berat">Berat Badan</label><br>
+                       <input type="number" id="berat">
+                       <br><br>
+                       <label for="tinggi" class="tinggi">Tinggi Badan</label><br>
+                       <input type="number" id="tinggi">
+                       <br><br>
                     </div>
                     <br>
-                       <button type="button" id="calculate-button">Hitung BMI</button>
-                       <button type="button" id="calculate-button-r">Reset</button>
+                       <button type="button" id="tombol-hitung" onclick="hitung ()">Hitung BMI</button>
+                       <button type="button" id="tombol-reset">Reset</button>
                 </section>
             </div>
             <!-- form display end -->
@@ -52,8 +56,8 @@
             <div class="container-item">
                 <h2>Result</h2>
                 <section class="container-result">
-                    <h4>Berat Badan Lebih</h4>
-                    <h1>0</h1>
+                    <h4>Hasil Perhitungan BMI</h4>
+                    <h1 id="outputHasil">0</h1>
                     <h4>Anda Memiliki Berat Badan Berlebih</h4>
                     <button type="button" id="calculate-button">Download Hasil BMI</button>
                 </section>
